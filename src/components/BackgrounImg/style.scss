@@ -1,0 +1,17 @@
+.containerBackground {
+  width: 100%;
+  margin: 0 auto 50px auto;
+  .backgroundImg {
+    background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: 50% -35px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,102 @@
+.sweetGallery {
+  width: 100%;
+  height: 130vh;
+  margin: 90px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h2 {
+      color: #262626;
+      font-family: Marcellus, sans-serif;
+      font-weight: 400;
+      font-size: 45px;
+      letter-spacing: 2px;
+    }
+    p {
+      font-family: Open Sans;
+      font-size: 20px;
+      line-height: 1.55em;
+      font-weight: 300;
+      color: #262626;
+    }
+    img {
+      margin: 15px 0;
+    }
+  }
+  .posts {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 19px;
+    .post {
+      position: relative;
+      width: 365.5px;
+      height: 354px;
+      &:hover {
+        .opacity {
+          opacity: 1;
+        }
+      }
+      .opacity {
+        color: white;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 365px;
+        height: 354px;
+        opacity: 0;
+        transition: all 600ms;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Marcellus, sans-serif;
+        h2 {
+          font-size: 28px;
+          line-height: 1.33em;
+          letter-spacing: 1.5px;
+          font-weight: 400;
+        }
+        span {
+          &:hover {
+            color: #be9c79;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sweetGallery {
+    width: 100%;
+    height: auto;
+    .header {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .posts {
+      display: grid;
+      grid-template-columns: auto ;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .sweetGallery {
+    width: 100%;
+    height: auto;
+    .posts {
+      display: grid;
+      grid-template-columns: auto auto ;
+    }
+  }
+}

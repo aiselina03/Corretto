@@ -1,0 +1,23 @@
+.sliderLogo {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .photo {
+    opacity: 1;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    outline: none;
+    .img {
+      transition: all 600ms;
+      position: absolute;
+      &:hover {
+        opacity: 0;
+        .imgHover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.slick-arrow {
+  display: none !important;
+}
+
+.photo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  outline: none;
+  .bckImage1 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-1.jpg");
+    background-position: center;
+  }
+  .bckImage2 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg");
+    background-position: center;
+  }
+  .bckImage3 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-3.jpg");
+    background-position: center center;
+  }
+
+  .text {
+    text-align: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    left: 40%;
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: white;
+      font-family: Marcellus;
+      line-height: 78px;
+      letter-spacing: 5px;
+      font-weight: 300;
+      font-size: 85px;
+    }
+    .seperator {
+      width: 192px;
+      height: 27px;
+      margin-top: 10px;
+    }
+    p {
+      margin: 15px 0;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      width: 650px;
+    }
+    button {
+      background-color: transparent;
+      color: rgb(255, 255, 255);
+      border-color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 23px 50px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: all 800ms !important;
+      &:hover {
+        background-color: #be9c79;
+        border-color: #be9c79;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .photo {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+
+    .text {
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      .seperator {
+        width: 192px;
+        height: 27px;
+        margin-top: 10px;
+      }
+      p {
+        display: none;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .photo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .text {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 15%;
+      left: 23%;
+      h1 {
+        font-size: 75px;
+      }
+      .logo {
+        width: 110px;
+        height: 110px;
+      }
+
+      .seperator {
+        width: 192px;
+        height: 27px;
+        margin-top: 10px;
+      }
+      p {
+        display: none;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+}
